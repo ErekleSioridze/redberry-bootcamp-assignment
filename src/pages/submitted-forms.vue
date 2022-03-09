@@ -45,7 +45,7 @@ const onCollapseClick = (key) => {
       >
         <div :class="['header', {collapsed: collapsedApplications.includes(i)}]" @click="onCollapseClick(i)">
           <span>{{ i + 1 }}</span>
-          <img src="..assets/images/arrow-down-white.svg">
+          <img src="../assets/images/arrow-down-white.svg">
         </div>
         <div v-if="collapsedApplications.includes(i)" class="body">
           <div class="block">

@@ -39,7 +39,7 @@ const val = computed({
         type="text"
         @focus="() => {if(!disabled) input.type = 'date'}"
       >
-      <img src="src/assets/images/calendar.png">
+      <img src="../../../assets/images/calendar.png">
     </div>
     <div v-if="error" class="error">
       *{{ error }}
