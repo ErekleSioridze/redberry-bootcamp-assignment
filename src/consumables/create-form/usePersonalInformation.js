@@ -82,7 +82,7 @@ export const usePersonalInformation = () => {
     value: null,
     error: "",
     validation: (newVal) => {
-      if (newVal && newVal.length > 0 && newVal.length < 13) {
+      if (newVal && !newVal.match("^(\\+9955\\d{8})$")) {
         phone.error = "Phone code is invalid";
         return false;
       }
